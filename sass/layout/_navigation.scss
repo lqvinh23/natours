@@ -40,6 +40,7 @@
     top: 0;
     left: 0;
     z-index: 1500;
+    transform: translateX(-30rem);
 
     opacity: 0;
     width: 0;
@@ -47,10 +48,7 @@
   }
 
   &__list {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    @include absCenter;
     list-style: none;
     text-align: center;
     width: 100%;
@@ -99,6 +97,7 @@
   }
 
   &__checkbox:checked ~ &__nav {
+    transform: translateX(0);
     opacity: 1;
     width: 100%;
   }
