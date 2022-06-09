@@ -25,7 +25,9 @@ $breakpoint argument choices:
 - phone
 - tab-port
 - tab-land
-- big-desktop
+- big-
+
+ORDER: Base + typography > general layout + grid > page layout > components
 */
 
 @mixin respond($breakpoint) {
