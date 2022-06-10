@@ -2,6 +2,10 @@
   max-width: $grid-width;
   margin: 0 auto;
 
+  @include respond(tab-land) {
+    padding: 0 2rem;
+  }
+
   @include respond(tab-port) {
     max-width: 50rem;
     padding: 0 3rem;

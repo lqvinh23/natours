@@ -527,17 +527,42 @@ body {
     opacity: 0;
     transform: translate(-50%, -50%) scale(0.25);
     transition: all 0.5s 0.2s; }
+    @media (max-width: 75em) {
+      .popup__content {
+        display: block; } }
   .popup__left {
     width: 33.3333%;
-    display: table-cell; }
+    display: table-cell;
+    vertical-align: middle; }
+    @media (max-width: 75em) {
+      .popup__left {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        padding-top: 1rem; } }
+    @media (max-width: 37.5em) {
+      .popup__left {
+        padding-top: 0.5rem; } }
   .popup__right {
     width: 66.6667%;
     display: table-cell;
     vertical-align: middle;
     padding: 3rem 5rem; }
+    @media (max-width: 75em) {
+      .popup__right {
+        display: block;
+        width: 100%; } }
+    @media (max-width: 37.5em) {
+      .popup__right {
+        padding: 3rem 3rem; } }
   .popup__img {
     display: block;
-    width: 100%; }
+    width: 100%;
+    border-radius: 3px; }
+    @media (max-width: 75em) {
+      .popup__img {
+        display: inline-block;
+        width: 49%; } }
   .popup__text {
     font-size: 1.4rem;
     margin-bottom: 4rem;
@@ -551,6 +576,9 @@ body {
     -ms-hyphens: auto;
     -webkit-hyphens: auto;
     hyphens: auto; }
+    @media (max-width: 37.5em) {
+      .popup__text {
+        column-count: 1; } }
   .popup:target {
     opacity: 1;
     visibility: visible; }
@@ -689,6 +717,9 @@ body {
 .row {
   max-width: 114rem;
   margin: 0 auto; }
+  @media (max-width: 75em) {
+    .row {
+      padding: 0 2rem; } }
   @media (max-width: 56.25em) {
     .row {
       max-width: 50rem;
@@ -734,10 +765,11 @@ body {
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   position: relative; }
-  @media (max-width: 37.5em) {
+  @media (max-width: 75em) {
     .header {
       -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
-      clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%); } }
+      clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+      margin-bottom: 3rem; } }
   .header__logo-box {
     position: absolute;
     top: 4rem;
